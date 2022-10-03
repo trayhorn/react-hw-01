@@ -7,7 +7,6 @@ export default function Profile({
   avatar,
   stats
 }) {
-
   return (
     <div className="profile">
       <div className="description">
