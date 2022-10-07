@@ -1,0 +1,22 @@
+
+.history {
+  width: 500px;
+}
+
+.head {
+  background-color: aqua;
+}
+
+.header {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.body {
+  background-color: wheat;
+}
+
+.item {
+  text-align: center;
+  padding: 7px 0 7px 0;
+}
