@@ -11,7 +11,3 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-.isOnline {
-  background-color: rgb(76, 76, 215);
-}
