@@ -1,10 +1,10 @@
-import FriendListItem from "../FriendListItem/FriendListItem";
-import s from "./FriendList.module.css"
+import FriendListItem from "./FriendListItem/FriendListItem";
+import { Container } from './FrienList.styled';
 
 
 export default function FriendList({friends}) {
   return (
-    <ul className={s.list}>
+    <Container>
       {friends.map(friend => (
         <FriendListItem
           key={friend.id}
@@ -13,7 +13,7 @@ export default function FriendList({friends}) {
           isOnline={friend.isOnline}
         />
       ))}
-    </ul>
+    </Container>
   )
 }
 

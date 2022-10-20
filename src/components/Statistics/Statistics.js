@@ -1,31 +1,31 @@
 import PropTypes from 'prop-types';
-import s from './Statistics.module.css';
+import { Section, Title, List, Item} from './Statistics.styled';
 
 export default function Statistics({title, stats}) {
 
   return (
-    <section className={s.statistics}>
-      <h2 className={s.title}>{title}</h2>
+    <Section>
+      <Title>{title}</Title>
 
-      <ul className={s.list}>
-        <li className={s.item}>
+      <List>
+        <Item>
           <span className="label">{stats[0].label}</span>
           <span className="percentage">{stats[0].percentage}%</span>
-        </li>
-        <li className={s.item}>
+        </Item>
+        <Item>
           <span className="label">{stats[1].label}</span>
           <span className="percentage">{stats[1].percentage}%</span>
-        </li>
-        <li className={s.item}>
+        </Item>
+        <Item>
           <span className="label">{stats[2].label}</span>
           <span className="percentage">{stats[2].percentage}%</span>
-        </li>
-        <li className={s.item}>
+        </Item>
+        <Item>
           <span className="label">{stats[3].label}</span>
           <span className="percentage">{stats[3].percentage}%</span>
-        </li>
-      </ul>
-    </section>
+        </Item>
+      </List>
+    </Section>
   )
 }
 
