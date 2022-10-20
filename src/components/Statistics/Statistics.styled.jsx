@@ -20,6 +20,8 @@ export const List = styled.ul`
   display: flex;
 `;
 
+
+
 export const Item = styled.li`
   font-size: 14px;
   width: calc(100% / 4);
@@ -28,6 +30,4 @@ export const Item = styled.li`
   justify-content: center;
   align-items: center;
   color: white;
-  outline: 1px solid tomato;
-  background-color: yellowgreen;
 `;
