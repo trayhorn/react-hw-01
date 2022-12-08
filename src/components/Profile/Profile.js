@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
-import {
-  ProfileCard, Avatar, Statistics, Tag,
-  Name, Item, Location} from './Profile.styled';
+import s from './Profile.module.css';
+
 
 export default function Profile({
   username,
@@ -11,32 +10,32 @@ export default function Profile({
   stats
 }) {
   return (
-    <ProfileCard>
-      <div>
-        <Avatar
+    <div className={s.profile}>
+      <div className={s.profileHeader}>
+        <img className={s.photocard}
           src={avatar}
           alt={username}
         />
-        <Name>{username}</Name>
-        <Tag>@{tag}</Tag>
-        <Location>{location}</Location>
+        <p>{username}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </div>
 
-      <Statistics>
-        <Item>
+      <ul>
+        <li>
           <span>Followers</span>
           <span>{stats.followers}</span>
-        </Item>
-        <Item>
+        </li>
+        <li>
           <span>Views</span>
           <span>{stats.views}</span>
-        </Item>
-        <Item>
+        </li>
+        <li>
           <span>likes</span>
           <span>{stats.likes}</span>
-        </Item>
-      </Statistics>
-    </ProfileCard>
+        </li>
+      </ul>
+    </div>
   )
 }
 

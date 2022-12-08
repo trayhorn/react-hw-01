@@ -1,0 +1,19 @@
+
+.profile {
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.photocard {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(232, 157, 66);
+  border-radius: 50%;
+}
+
+.profileHeader {
+  background-color: rgb(76, 193, 129);
+}

@@ -10,14 +10,16 @@ import TransactionHistory from "./components/TransactionHistory/TransactionHisto
 
 
 export default function App() {
+  const { username, tag, location, avatar, stats } = user;
+
   return (
     <div>
       <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
+        username={username}
+        tag={tag}
+        location={location}
+        avatar={avatar}
+        stats={stats}
       />
       <Statistics
         title="Upload stats"
